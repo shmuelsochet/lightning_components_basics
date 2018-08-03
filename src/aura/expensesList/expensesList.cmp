@@ -1,0 +1,11 @@
+<aura:component >
+    <aura:attribute name="expenses" type="Expense__c[]"/>
+		
+    	<p class="slds-p-horizontal--small">
+            <h1 class="slds-text-heading--medium">Expenses</h1>
+        	<aura:iteration items="{!v.expenses}" var="expense">
+                <c:expenseItem expense="{!expense}"/>
+            </aura:iteration>
+        </p>
+ 
+</aura:component>
